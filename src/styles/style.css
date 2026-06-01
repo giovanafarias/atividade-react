@@ -1,0 +1,131 @@
+.App {
+    margin: 10px;
+}
+
+.card-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    padding: 0px 10px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 7px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 2px gray;
+}
+
+.card:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.card-photo {
+    display: flex;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    border-right: 2px solid gray;
+    width: min(160px);
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+}
+
+.image {
+    border-radius: 100px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.mail {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* DETAILS */
+
+.details {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.details-header {
+    background: linear-gradient(135deg, #5f7ae8, #7b4fc9);
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.details-image {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 15px;
+}
+
+.details-header h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.details-header p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.details-content {
+    padding: 28px;
+}
+
+.details-section {
+    margin-bottom: 30px;
+}
+
+.details-section h2 {
+    font-size: 14px;
+    color: #a7b2c5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.details-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    font-size: 14px;
+    color: #4f5d73;
+}
+
+.details-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4f5d73;
+}
+
+.details-divider {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 25px 0;
+}
